@@ -1,0 +1,201 @@
+.layui-header {
+    /*width: 236px;*/
+    border-bottom: 1px solid rgb(19, 55, 82);
+    background-color: rgb(0, 19, 33);
+    color: rgb(255, 255, 255);
+}
+.layui-layout-left {
+    left: 0;
+}
+.layui-layout-left .layui-nav-item {
+    height: 59px;
+}
+.layui-body {
+    /*top: 0 !important;*/
+    padding-bottom: 0!important;
+    /*left: 236px;*/
+    /*left: 0;*/
+}
+.layui-side {
+
+}
+.layui-nav.layui-nav-tree {
+    /*width: 235px;*/
+}
+.layui-side-scroll {
+    width: 200px;
+    border-right: 1px solid rgb(19, 55, 82);
+}
+.layui-layout-admin .layui-side {
+    /*width: 236px;*/
+}
+
+.layui-nav-tree .layui-nav-item>a {
+    line-height: 30px;
+}
+
+.layui-badge-rim, .layui-border, .layui-colla-content, .layui-colla-item, .layui-collapse, .layui-elem-field, .layui-form-pane .layui-form-item[pane], .layui-form-pane .layui-form-label, .layui-input, .layui-input-split, .layui-panel, .layui-quote-nm, .layui-select, .layui-tab-bar, .layui-tab-card, .layui-tab-title, .layui-tab-title .layui-this:after, .layui-textarea {
+    border-color: #ffffff;
+}
+
+.layui-panel{
+    border: 0;
+    border-radius: 0;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 8%);
+    background-color: #001321;
+    color: #ffffff;
+}
+
+.layui-logo img {
+    width: 100%;
+    height: 50px;
+    padding: 10px 100px 10px 0;
+    background: #001321;
+}
+.layui-layout-admin .layui-header {
+    background-color: #001321
+}
+.layui-bg-black {
+    background-color: #001321!important;
+    color: #9AA2AA!important;;
+}
+
+.layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover {
+    color: rgb(0, 227, 180);
+    font-weight: 600;
+    background-color: rgb(0, 39, 48);
+}
+
+.layui-nav-item {
+    background-color: #001321!important;
+}
+
+.layui-nav-tree .layui-nav-item::before {
+    content: "";
+    width: 4px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    position: absolute;
+    background-color: rgb(0, 227, 180);
+    transform: translateX(-100%);
+    transform-origin: left center;
+    transition: transform 0.2s ease-in 0s;
+    border: none !important;
+    top: 0px !important;
+    bottom: 0px !important;
+    left: 0px !important;
+    right: unset !important;
+    z-index: 9;
+}
+.layui-this::before {
+    transform: translateX(0px);
+}
+
+
+.warning-tips-warp {
+    display: flex;
+    min-height: 40px;
+    width: 100%;
+    padding: 8px 16px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 22px;
+    background-color: rgba(250, 173, 21, 0.18);
+}
+
+.warning-tips-svg {
+    margin-top: 2px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    color: rgb(250, 173, 21);
+}
+
+@media (max-width: 768px) {
+    .layui-side {
+        z-index: 10001;
+        width: 280px;
+        max-width: calc(100% - 48px);
+        display: block;
+        height: calc(100vh - env(safe-area-inset-bottom));
+        top: 0px;
+        position: fixed;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in 0s;
+        overflow-y: auto;
+    }
+
+    .layui-side.show {
+        transform: translateX(0px);
+    }
+
+    .layui-body {
+        left: 0;
+    }
+
+    .eVvUTL {
+        display: grid;
+        gap: 8px;
+    }
+
+    .PtYLB:not(:first-child) {
+        padding-top: 32px;
+        border-left: none;
+        border-top: 1px solid rgb(19, 55, 82);
+    }
+
+    .PtYLB:not(:first-child) {
+        margin-left: -48px;
+        padding-left: 48px;
+    }
+
+    .gWvhkP {
+        flex: 0 1 auto;
+        padding: 8px;
+    }
+
+    .layui-logo img {
+        width: 100%;
+        padding: 0 0 0 0;
+        background: #001321;
+        height: 24px;
+    }
+
+    .layui-layout-admin .layui-logo {
+        line-height: 34px;
+        width: auto;
+    }
+
+    .sc-main {
+        padding: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .gONOig {
+        padding-bottom: 112px;
+    }
+
+    .imSfZo {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .imSfZo {
+        flex-direction: column;
+    }
+
+    .eVvUTL {
+        padding: 16px;
+    }
+
+    .hKKDAl {
+        padding-top: 16px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .PtYLB:not(:first-child) {
+        margin-left: -16px;
+        padding-left: 16px;
+    }
+}
